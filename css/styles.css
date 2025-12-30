@@ -54,7 +54,7 @@ b {
 
 @media (min-width: 600px) {
     #recipe-container {
-        display: block;
+        display: block !important;
     }
 
     #ingredients-container {
