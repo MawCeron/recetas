@@ -55,12 +55,35 @@ b {
 @media (min-width: 600px) {
     #recipe-container {
         grid-template-columns: 1fr 320px;
+        grid-template-rows: auto auto 1fr;
         align-items: start;
+    }
+
+    #title-wrapper {
+        grid-column: 1 / -1;
+    }
+
+    #description {
+        grid-column: 1;
+        grid-row: 2;
     }
 
     #ingredients-container {
         grid-column: 2;
-        grid-row: 2 / span 4;
+        grid-row: 2 / -1;
+        align-self: start;
+        position: sticky;
+        top: 16px;
+    }
+
+    #instructions-container {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #image-container {
+        grid-column: 1;
+        grid-row: 4;
     }
 }
 
@@ -112,7 +135,7 @@ b {
 #back-link {
     margin-right: 8px;
     text-decoration: none;
-    display: none;
+    display: inline-flex;
     align-items: center;
     color: var(--text);
 }
