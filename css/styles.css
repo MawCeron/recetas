@@ -53,6 +53,7 @@
 #back-link {
     margin-right: 8px;
     text-decoration: none;
+    display: none;
 }
 
 #ingredients-container {
