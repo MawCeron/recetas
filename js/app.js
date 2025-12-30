@@ -4,7 +4,6 @@ async function loadRecipe() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("recipe");
   if (!id) return null;
-
   const res = await fetch(`recipes/${id}.md`);
   return res.text();
 }
@@ -18,9 +17,7 @@ async function loadRecipeIndex() {
 function parseRecipe(markdown) {
   const titleMatch = markdown.match(/^# (.+)$/m);
   const title = titleMatch ? titleMatch[1] : "Receta";
-
   const sections = markdown.match(/\n## (.|\n)+?(?=\n## |$)/g) || [];
-
   return {
     title,
     description: markdown.split("##")[0].replace(/^#.+\n/, ""),
@@ -33,35 +30,39 @@ function parseRecipe(markdown) {
 function renderIndex(index) {
   const container = document.getElementById("recipe-list");
   container.innerHTML = "";
-
+  
+  // Agregar título general
+  const mainTitle = document.createElement("h1");
+  mainTitle.textContent = "Recetas de Maw";
+  mainTitle.style.marginBottom = "32px";
+  container.appendChild(mainTitle);
+  
   index.categories.forEach(category => {
     const section = document.createElement("section");
-
+    section.className = "category";
+    
     const title = document.createElement("h2");
     title.textContent = category.title;
     section.appendChild(title);
-
+    
     const grid = document.createElement("div");
     grid.className = "card-grid";
-
+    
     category.recipes.forEach(recipe => {
       const card = document.createElement("a");
       card.className = "recipe-card";
       card.href = `?recipe=${recipe.id}`;
-
       card.innerHTML = `
         <img src="images/${recipe.id}.jpg"
              alt="${recipe.title}"
              onerror="this.src='images/placeholder.jpg'">
-
         <div class="card-title">
           ${recipe.title}
         </div>
       `;
-
       grid.appendChild(card);
     });
-
+    
     section.appendChild(grid);
     container.appendChild(section);
   });
@@ -79,34 +80,34 @@ function fixImagePaths(html) {
   );
 }
 
-
 async function init() {
   const recipeMarkdown = await loadRecipe();
-
+  
   if (!recipeMarkdown) {
+    // Mostrar lista de recetas
     toggleBackLink(false);
-
+    document.getElementById("recipe-container").style.display = "none";
+    document.getElementById("recipe-list").style.display = "block";
     const index = await loadRecipeIndex();
     renderIndex(index);
     return;
   }
-
+  
+  // Mostrar receta individual
   toggleBackLink(true);
-
+  document.getElementById("recipe-list").style.display = "none";
+  document.getElementById("recipe-container").style.display = "grid";
+  
   const recipe = parseRecipe(recipeMarkdown);
-
   document.title = recipe.title;
   document.getElementById("title").textContent = recipe.title;
   document.getElementById("description").innerHTML = fixImagePaths(md.render(recipe.description));
   document.getElementById("ingredients-container").innerHTML = md.render(recipe.ingredients);
   document.getElementById("instructions-container").innerHTML = md.render(recipe.instructions);
-
+  
   if (recipe.images) {
     document.getElementById("image-container").innerHTML = fixImagePaths(md.render(recipe.images));
   }
-
-  document.getElementById("recipe-container").style.display = "block";
 }
-
 
 init().catch(console.error);
