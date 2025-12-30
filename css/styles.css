@@ -54,30 +54,30 @@ b {
 
 @media (min-width: 600px) {
     #recipe-container {
-        grid-template-columns: 1fr 320px;
-        align-items: start;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 
     #title-wrapper {
-        grid-column: 1 / -1;
+        width: 100%;
     }
 
-    #description {
-        grid-column: 1;
+    #recipe-container>div:not(#title-wrapper) {
+        display: contents;
+    }
+
+    #description,
+    #instructions-container,
+    #image-container {
+        max-width: calc(100% - 336px);
     }
 
     #ingredients-container {
-        grid-column: 2;
-        grid-row: 2 / 4;
-        align-self: start;
-    }
-
-    #instructions-container {
-        grid-column: 1;
-    }
-
-    #image-container {
-        grid-column: 1;
+        width: 320px;
+        float: right;
+        margin-left: 16px;
+        margin-bottom: 16px;
     }
 }
 
