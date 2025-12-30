@@ -101,18 +101,9 @@ async function init() {
   const recipe = parseRecipe(recipeMarkdown);
   document.title = recipe.title;
   document.getElementById("title").textContent = recipe.title;
-  
-  // Reordenar: insertar ingredientes después de la descripción
-  const descriptionEl = document.getElementById("description");
-  const ingredientsEl = document.getElementById("ingredients-container");
-  const instructionsEl = document.getElementById("instructions-container");
-  
-  descriptionEl.innerHTML = fixImagePaths(md.render(recipe.description));
-  ingredientsEl.innerHTML = md.render(recipe.ingredients);
-  instructionsEl.innerHTML = md.render(recipe.instructions);
-  
-  // Mover ingredientes justo después de la descripción en el DOM
-  descriptionEl.parentNode.insertBefore(ingredientsEl, descriptionEl.nextSibling);
+  document.getElementById("ingredients-container").innerHTML = md.render(recipe.ingredients);
+  document.getElementById("description").innerHTML = fixImagePaths(md.render(recipe.description));
+  document.getElementById("instructions-container").innerHTML = md.render(recipe.instructions);
   
   if (recipe.images) {
     document.getElementById("image-container").innerHTML = fixImagePaths(md.render(recipe.images));

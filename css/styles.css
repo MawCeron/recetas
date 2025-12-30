@@ -62,13 +62,10 @@ b {
         width: 320px;
         margin-left: 16px;
         margin-bottom: 16px;
-        clear: right;
     }
 
     #description img {
-        max-width: 420px;
-        float: left;
-        margin-right: 16px;
+        max-width: 100%;
     }
 }
 
@@ -111,7 +108,7 @@ b {
 }
 
 #title-wrapper {
-    margin-top: 16px;
+    margin-top: 8px;
     margin-bottom: 8px;
     display: flex;
     align-items: baseline;
