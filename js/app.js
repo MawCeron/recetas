@@ -69,7 +69,7 @@ function renderIndex(index) {
 
 function toggleBackLink(show) {
   const backLink = document.getElementById("back-link");
-  backLink.style.display = show ? "inline-flex" : "none";
+  backLink.style.display = show ? "flex" : "none";
 }
 
 function fixImagePaths(html) {
