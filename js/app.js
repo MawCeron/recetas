@@ -72,6 +72,14 @@ function toggleBackLink(show) {
   backLink.style.display = show ? "inline-flex" : "none";
 }
 
+function fixImagePaths(html) {
+  return html.replace(
+    /src="\/images\//g,
+    'src="images/'
+  );
+}
+
+
 async function init() {
   const recipeMarkdown = await loadRecipe();
 
@@ -89,12 +97,12 @@ async function init() {
 
   document.title = recipe.title;
   document.getElementById("title").textContent = recipe.title;
-  document.getElementById("description").innerHTML = md.render(recipe.description);
+  document.getElementById("description").innerHTML = fixImagePaths(md.render(recipe.description));
   document.getElementById("ingredients-container").innerHTML = md.render(recipe.ingredients);
   document.getElementById("instructions-container").innerHTML = md.render(recipe.instructions);
 
   if (recipe.images) {
-    document.getElementById("image-container").innerHTML = md.render(recipe.images);
+    document.getElementById("image-container").innerHTML = fixImagePaths(md.render(recipe.images));
   }
 
   document.getElementById("recipe-container").style.display = "block";
