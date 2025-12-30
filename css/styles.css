@@ -114,6 +114,17 @@ b {
     text-decoration: none;
     display: none;
     align-items: center;
+    color: var(--text);
+}
+
+#back-icon {
+    width: 28px;
+    height: 28px;
+    stroke: currentColor;
+}
+
+#back-link:hover {
+    opacity: 0.7;
 }
 
 #ingredients-container {
