@@ -30,23 +30,41 @@ function parseRecipe(markdown) {
   };
 }
 
-function renderIndex(data) {
-  const el = document.getElementById("recipe-list");
+function renderIndex(index) {
+  const container = document.getElementById("recipe-list");
+  container.innerHTML = "";
 
-  el.innerHTML = data.categories.map(cat => `
-    <section class="category">
-      <h2>${cat.title}</h2>
-      <div class="recipe-grid">
-        ${cat.recipes.map(r => `
-          <a class="recipe-card" href="?recipe=${r.id}">
-            ${r.title}
-          </a>
-        `).join("")}
-      </div>
-    </section>
-  `).join("");
+  for (const [categoria, data] of Object.entries(index)) {
+    const section = document.createElement("section");
 
-  el.style.display = "block";
+    const title = document.createElement("h2");
+    title.textContent = `${data.icono} ${categoria}`;
+    section.appendChild(title);
+
+    const grid = document.createElement("div");
+    grid.className = "card-grid";
+
+    data.recetas.forEach(receta => {
+      const card = document.createElement("a");
+      card.className = "recipe-card";
+      card.href = `?recipe=${receta.id}`;
+
+      card.innerHTML = `
+        <img src="images/${receta.id}.jpg"
+             alt="${receta.titulo}"
+             onerror="this.src='images/placeholder.jpg'">
+
+        <div class="card-title">
+          ${receta.titulo}
+        </div>
+      `;
+
+      grid.appendChild(card);
+    });
+
+    section.appendChild(grid);
+    container.appendChild(section);
+  }
 }
 
 async function init() {
