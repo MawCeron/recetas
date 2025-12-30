@@ -62,10 +62,13 @@ b {
         width: 320px;
         margin-left: 16px;
         margin-bottom: 16px;
+        clear: right;
     }
 
     #description img {
-        max-width: calc(100% - 336px);
+        max-width: 420px;
+        float: left;
+        margin-right: 16px;
     }
 }
 
