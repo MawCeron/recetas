@@ -55,7 +55,6 @@ b {
 @media (min-width: 600px) {
     #recipe-container {
         grid-template-columns: 1fr 320px;
-        grid-template-rows: auto auto 1fr;
         align-items: start;
     }
 
@@ -65,12 +64,11 @@ b {
 
     #description {
         grid-column: 1;
-        grid-row: 2;
     }
 
     #ingredients-container {
         grid-column: 2;
-        grid-row: 2 / -1;
+        grid-row: 2;
         align-self: start;
         position: sticky;
         top: 16px;
@@ -78,12 +76,10 @@ b {
 
     #instructions-container {
         grid-column: 1;
-        grid-row: 3;
     }
 
     #image-container {
         grid-column: 1;
-        grid-row: 4;
     }
 }
 
