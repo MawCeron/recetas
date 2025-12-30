@@ -71,10 +71,14 @@ async function init() {
   const recipeMarkdown = await loadRecipe();
 
   if (!recipeMarkdown) {
+    toggleBackLink(false);
+
     const index = await loadRecipeIndex();
     renderIndex(index);
     return;
   }
+
+  toggleBackLink(true);
 
   const recipe = parseRecipe(recipeMarkdown);
 
@@ -90,5 +94,6 @@ async function init() {
 
   document.getElementById("recipe-container").style.display = "block";
 }
+
 
 init().catch(console.error);
