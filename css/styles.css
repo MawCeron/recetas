@@ -24,6 +24,21 @@ body {
     color: var(--text);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text);
+}
+
+strong,
+b {
+    color: inherit;
+    font-weight: 700;
+}
+
 .container {
     display: none;
     max-width: 900px;
