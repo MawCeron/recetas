@@ -101,8 +101,9 @@ async function init() {
   const recipe = parseRecipe(recipeMarkdown);
   document.title = recipe.title;
   document.getElementById("title").textContent = recipe.title;
+  document.getElementById("description1").innerHTML = fixImagePaths(md.render(recipe.description));
+  document.getElementById("description2").innerHTML = fixImagePaths(md.render(recipe.description));
   document.getElementById("ingredients-container").innerHTML = md.render(recipe.ingredients);
-  document.getElementById("description").innerHTML = fixImagePaths(md.render(recipe.description));
   document.getElementById("instructions-container").innerHTML = md.render(recipe.instructions);
   
   if (recipe.images) {

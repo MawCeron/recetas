@@ -52,6 +52,19 @@ b {
     gap: 16px;
 }
 
+#description1 img {
+    border-radius: 8px;
+}
+
+#description2 {
+    display: none;
+}
+
+#description2 img {
+    border-radius: 8px;
+    max-width: calc(100% - 350px);
+}
+
 @media (min-width: 600px) {
     #recipe-container {
         display: block !important;
@@ -60,12 +73,16 @@ b {
     #ingredients-container {
         float: right;
         width: 320px;
-        margin-left: 16px;
-        margin-bottom: 16px;
+        margin: 4px 0 16px 16px;
+        padding: 0 24px 16px;
     }
 
-    #description img {
-        max-width: calc(100% - 336px);
+    #description1 {
+        display: none;
+    }
+
+    #description2 {
+        display: block;
     }
 }
 
