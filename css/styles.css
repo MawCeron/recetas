@@ -65,7 +65,7 @@ b {
     }
 
     #description img {
-        max-width: 100%;
+        max-width: calc(100% - 336px);
     }
 }
 
