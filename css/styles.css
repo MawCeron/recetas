@@ -17,6 +17,7 @@
 
 .recipe-card {
     display: block;
+    height: 100%;
     border-radius: 12px;
     overflow: hidden;
     text-decoration: none;
@@ -67,6 +68,18 @@
         grid-template-columns: 1fr 320px;
         align-items: start;
     }
+
+    #ingredients-container {
+        background-color: #eee;
+        padding: 16px 20px;
+        border-radius: 12px;
+    }
+
+    #image-container p {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 12px;
+    }
 }
 
 #ingredients-container h2::before {
@@ -86,23 +99,5 @@
     max-width: 100%;
     border-radius: 8px;
     display: block;
-}
-
-@media print,
-screen and (min-width: 600px) {
-    #ingredients-container {
-            background-color: #eee;
-            padding: 16px 20px;
-            border-radius: 12px;
-        }
-
-    #description {
-        display: block;
-    }
-
-    #image-container p {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 12px;
-    }
+    margin-bottom: 12px;
 }
