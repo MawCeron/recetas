@@ -87,16 +87,7 @@ async function init() {
   if (!recipeMarkdown) {
     // Mostrar lista de recetas
     toggleBackLink(false);
-    document.getElementById("recipe-container").classList.remove("active");
     document.getElementById("recipe-list").style.display = "block";
-    
-    // Limpiar contenido de la receta anterior si existe
-    document.getElementById("ingredients-container").innerHTML = "";
-    document.getElementById("description1").innerHTML = "";
-    document.getElementById("description2").innerHTML = "";
-    document.getElementById("instructions-container").innerHTML = "";
-    document.getElementById("image-container").innerHTML = "";
-    
     const index = await loadRecipeIndex();
     renderIndex(index);
     return;
@@ -104,8 +95,7 @@ async function init() {
   
   // Mostrar receta individual
   toggleBackLink(true);
-  document.getElementById("recipe-list").style.display = "none";
-  document.getElementById("recipe-container").classList.add("active");
+  document.getElementById("recipe-container").style.display = "block";
   
   const recipe = parseRecipe(recipeMarkdown);
   document.title = recipe.title;
