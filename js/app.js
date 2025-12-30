@@ -34,28 +34,28 @@ function renderIndex(index) {
   const container = document.getElementById("recipe-list");
   container.innerHTML = "";
 
-  for (const [categoria, data] of Object.entries(index)) {
+  index.categories.forEach(category => {
     const section = document.createElement("section");
 
     const title = document.createElement("h2");
-    title.textContent = `${data.icono} ${categoria}`;
+    title.textContent = category.title;
     section.appendChild(title);
 
     const grid = document.createElement("div");
     grid.className = "card-grid";
 
-    data.recetas.forEach(receta => {
+    category.recipes.forEach(recipe => {
       const card = document.createElement("a");
       card.className = "recipe-card";
-      card.href = `?recipe=${receta.id}`;
+      card.href = `?recipe=${recipe.id}`;
 
       card.innerHTML = `
-        <img src="images/${receta.id}.jpg"
-             alt="${receta.titulo}"
+        <img src="images/${recipe.id}.jpg"
+             alt="${recipe.title}"
              onerror="this.src='images/placeholder.jpg'">
 
         <div class="card-title">
-          ${receta.titulo}
+          ${recipe.title}
         </div>
       `;
 
@@ -64,7 +64,7 @@ function renderIndex(index) {
 
     section.appendChild(grid);
     container.appendChild(section);
-  }
+  });
 }
 
 function toggleBackLink(show) {
