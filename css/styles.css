@@ -47,9 +47,13 @@ b {
 }
 
 #recipe-container {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     gap: 16px;
+}
+
+#recipe-container.active {
+    display: grid;
 }
 
 #description1 img {
@@ -125,7 +129,7 @@ b {
 }
 
 #title-wrapper {
-    margin-top: 8px;
+    margin-top: 0;
     margin-bottom: 8px;
     display: flex;
     align-items: baseline;
