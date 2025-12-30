@@ -79,6 +79,11 @@
     border-radius: 8px;
 }
 
+#description img {
+    border-radius: 8px;
+    max-width: calc(100% - 350px);
+}
+
 @media print,
 screen and (min-width: 600px) {
     #ingredients-container {
@@ -91,11 +96,7 @@ screen and (min-width: 600px) {
         border-radius: 8px;
     }
 
-    #description1 {
-        display: none;
-    }
-
-    #description2 {
+    #description {
         display: block;
     }
 
