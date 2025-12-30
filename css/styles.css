@@ -75,18 +75,33 @@
     content: "📷 ";
 }
 
-@media screen and (min-width: 600px) {
-    #ingredients-container {
-        width: 320px;
-        float: right;
-        margin-left: 16px;
-    }
+#image-container p img {
+    border-radius: 8px;
 }
 
-@media print {
+@media print,
+screen and (min-width: 600px) {
+    #ingredients-container {
+        width: 320px;
+        background-color: #eee;
+        float: right;
+        padding: 0px 24px 16px;
+        margin: 4px 0 16px 16px;
 
-    #back-link,
-    #image-container {
+        border-radius: 8px;
+    }
+
+    #description1 {
         display: none;
+    }
+
+    #description2 {
+        display: block;
+    }
+
+    #image-container p {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 12px;
     }
 }
