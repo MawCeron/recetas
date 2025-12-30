@@ -34,6 +34,7 @@ function renderIndex(index) {
   // Agregar título general
   const mainTitle = document.createElement("h1");
   mainTitle.textContent = "Recetas de Maw";
+  mainTitle.style.marginTop = "0";
   mainTitle.style.marginBottom = "32px";
   container.appendChild(mainTitle);
   
@@ -88,6 +89,14 @@ async function init() {
     toggleBackLink(false);
     document.getElementById("recipe-container").style.display = "none";
     document.getElementById("recipe-list").style.display = "block";
+    
+    // Limpiar contenido de la receta anterior si existe
+    document.getElementById("ingredients-container").innerHTML = "";
+    document.getElementById("description1").innerHTML = "";
+    document.getElementById("description2").innerHTML = "";
+    document.getElementById("instructions-container").innerHTML = "";
+    document.getElementById("image-container").innerHTML = "";
+    
     const index = await loadRecipeIndex();
     renderIndex(index);
     return;

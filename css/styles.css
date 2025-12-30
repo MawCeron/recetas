@@ -43,7 +43,7 @@ b {
     display: none;
     max-width: 900px;
     margin: auto;
-    padding: 16px;
+    padding: 8px 16px 16px;
 }
 
 #recipe-container {
