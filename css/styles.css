@@ -63,6 +63,10 @@ b {
         margin-left: 16px;
         margin-bottom: 16px;
     }
+
+    #description img {
+        max-width: calc(100% - 336px);
+    }
 }
 
 .category {
