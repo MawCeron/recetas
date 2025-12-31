@@ -1,32 +1,18 @@
 categories:
   - id: main
-    title: "🍝 Haupgerichte"
+    title: "🍝 Platos Principales"
     recipes:
-      - id: tomatosoup
-        title: Tomatensuppe
-      - id: pizza
-        title: Pizza
-      - id: tarte-flambee
-        title: Flammkuchen
-      - id: shashlik-pot
-        title: Schaschliktopf
+      - id: costillas-bbq
+        title: Costillas BBQ
 
   - id: fastfood
     title: "🍔 Fast Food"
     recipes:
       - id: smashed-burger
         title: Smashed Burger
-      - id: nachos
-        title: Nachos
-      - id: enchiladas
-        title: Enchiladas
 
   - id: sides
-    title: "🥗 Beilagen"
+    title: "🥗 Guarniciones"
     recipes:
-      - id: roast-potatoes
-        title: Röstkartoffeln
-      - id: pasta-salad
-        title: Nudelsalat
-      - id: arroz-rojo
-        title: "Arroz Rojo / Mexikanischer Reis"
+      - id: southern-coleslaw
+        title: Coleslaw Sureño
