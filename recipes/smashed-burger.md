@@ -2,66 +2,65 @@
 
 ![](/images/smashed-burger.jpg)
 
-## Zutaten
+## Ingredientes
 
-### Für 4 Burger
+### Para 4 Hamburguesas
 
-- **4** Hamburger-Brötchen
-- **680g** Rinderhackfleisch
-- **8** Scheiben Cheddar Käse
+- **4** Panes para hamburguesa
+- **680g** Carne molida de res
+- **8** Rebanadas de queso cheddar
 - **1** Tomate
-- **4** Esslöffel Butterschmalz
-- Salz
-- **0,2** Eisbergsalat
+- **4** Cucharadas de mantequilla clarificada
+- Sal
+- Lechuga
 
-### Für die Sauce
+### Para la Salsa
 
-- **120ml** Mayonnaise
-- **1/2** Zwiebel
-- **1** Teelöffel Wocestershire Sauce
-- **2** Teelöffel Chilli Sauce
-- **1** Esslöffel Senf
+- **120ml** Mayonesa
+- **1/2** Cebolla
+- **1** Cucharadita de Salsa Inglésa (Wocestershire)
+- **2** Cucharaditas de salsa picante
+- **1** Cucharada de mostaza
 
-## Zubereitung
+## Preparación
 
-### Vorbereitung
+### Previa
 
-- Das Hackfleisch in 8 gleichgroße Teile aufteilen (je 85g) und zu runden
-Kügelchen formen. Diese dann in den Kühlschrank stellen
-- Den Eisbergsalat klein schneiden
-- Die Tomate in 8 dünne Scheiben schneiden
-(*Tipp: Die Tomate mit dem Strunk zur Seite gedreht schneiden*)
-- Die Zwiebel so klein wie möglich schneiden (am besten reiben)
+- Dividir la carne molida en 8 porciones iguales (de 85g cada una) y formar
+  bolitas redondas. Refrigerar
+- Cortar la lechuga iceberg en trozos pequeños
+- Cortar el tomate en 8 rebanadas delgadas
+  (_Consejo: Cortar el tomate colocándolo de lado con el tallo hacia un costado_)
+- Picar la cebolla lo más finamente posible (idealmente rallarla)
 
-### Sauce
+### Salsa
 
-Die Zwiebel zusammen mit allen anderen Zutaten für die Sauce verrühren.
+Mezclar la cebolla junto con todos los demás ingredientes para la salsa.
 
-### Brötchen rösten
+### Tostar los panes
 
-Butterschmalz in eine Pfanne auf mittlerer Hitze geben und die Brötchen darin
-goldbraun rösten.
+Poner mantequilla clarificada en una sartén a fuego medio y tostar los panes
+hasta que queden dorados.
 
-### Fleisch anbraten
+### Cocinar la carne
 
-Anschließend die Hitze hochdrehen und die Fleisch-Kügelchen in die heiße Pfanne
-legen (ohne Öl oder Fett) und dann möglichst platt drücken. Die obere Seite
-anschließend mit Salz und Pfeffer würzen und einen kleinen Klecks der Sauce
-drauf geben. Ist die Unterseite schön braun, das Patty wenden. Kurz bevor
-es fertig ist, mit einer Scheibe Käse belegen. Wenn die Unterseite ebenfalls
-fertig ist, ein Patty auf das andere legen. Der Käse "klebt" sie dabei sozusagen
-zusammen.
+Después subir el fuego y colocar las bolitas de carne en la sartén caliente
+(sin aceite ni grasa) y aplastarlas lo más posible. Sazonar la parte superior
+con sal y pimienta y poner un poco de salsa encima. Cuando la parte inferior
+esté bien dorada, voltear la hamburguesa. Poco antes de que esté lista,
+cubrir con una rebanada de queso. Cuando la parte inferior también esté
+lista, colocar una hamburguesa sobre la otra. El queso las "pegará" entre sí.
 
-### Burger belegen
+### Armar la hamburguesa
 
-Das untere Brötchen mit etwas Sauce bestreichen. Anschließend das Brötchen
-mit Salat, 2 Tomatenscheiben und dem Doppel-Patty belegen. Das Brötchen ist
-stabiler und lässt sich besser essen, wenn der Salat und die Tomaten unter
-dem Fleisch liegen. Anschließend den "Deckel" auf den Burger legen und fertig.
+Untar el pan inferior con un poco de salsa. Luego colocar sobre el pan
+la lechuga, 2 rebanadas de tomate y la hamburguesa doble. La hamburguesa es
+más estable y más fácil de comer cuando la lechuga y los tomates están debajo
+de la carne. Finalmente poner la "tapa" sobre la hamburguesa y listo.
 
-*Original-Rezept: [Better Than Fast Food! Classic Smash Burger Recipe](https://youtu.be/foD42-73wdI)*
+_Receta Original: [Better Than Fast Food! Classic Smash Burger Recipe](https://youtu.be/foD42-73wdI)_
 
-## Bilder
+## Imágenes
 
 ![](/images/smashed-burger-1.jpg)
 ![](/images/smashed-burger-2.jpg)
