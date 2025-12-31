@@ -1,5 +1,7 @@
 # Coleslaw Sureño
 
+![](/images/southern-coleslaw.jpg)
+
 ## Ingredientes
 
 ### Para 4 porciones
